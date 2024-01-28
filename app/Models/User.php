@@ -58,6 +58,6 @@ class User extends Authenticatable
 
     public function likedQRCodes()
     {
-        return $this->belongsToMany(QRCode::class, 'user_qr_code_likes');
+        return $this->belongsToMany(QrCode::class, 'user_qr_code_likes');
     }
 }
